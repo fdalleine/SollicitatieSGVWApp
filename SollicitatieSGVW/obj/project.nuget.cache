@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GXnI2XJG0XCFcl1rvS/1+2Xzvo+KCvPQag09u7Upc56qNIwC+sPpOXATvwGZXMEQKtAFu5Wggz8N22EUm/7uOQ==",
+  "dgSpecHash": "b7wsMkX7PzqfDlCYsryN7rOAFZ6lK2ZpoQQ/tul7mkNuJ6A5u0x3FN8TVLK26nPYeD6G4TpC9suioGFQOp5VaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVW\\SollicitatieSGVW.csproj",
+  "projectFilePath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW\\SollicitatieSGVW.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fdall\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.6\\microsoft.aspnetcore.cryptography.internal.3.1.6.nupkg.sha512",
     "C:\\Users\\fdall\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.6\\microsoft.aspnetcore.cryptography.keyderivation.3.1.6.nupkg.sha512",

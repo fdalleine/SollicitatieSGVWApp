@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj",
       "projectName": "SollicitatieSGVW.Entity",
-      "projectPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj",
+      "projectPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj",
       "packagesPath": "C:\\Users\\fdall\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVW.Entity\\obj\\",
+      "outputPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

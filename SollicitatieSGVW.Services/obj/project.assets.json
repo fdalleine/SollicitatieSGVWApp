@@ -5072,11 +5072,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVW.Services\\SollicitatieSGVW.Services.csproj",
+      "projectUniqueName": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Services\\SollicitatieSGVW.Services.csproj",
       "projectName": "SollicitatieSGVW.Services",
-      "projectPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVW.Services\\SollicitatieSGVW.Services.csproj",
+      "projectPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Services\\SollicitatieSGVW.Services.csproj",
       "packagesPath": "C:\\Users\\fdall\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVW.Services\\obj\\",
+      "outputPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5095,11 +5095,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj": {
-              "projectPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj"
+            "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj": {
+              "projectPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj"
             },
-            "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVW.Persistence\\SollicitatieSGVW.Persistence.csproj": {
-              "projectPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVW.Persistence\\SollicitatieSGVW.Persistence.csproj"
+            "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Persistence\\SollicitatieSGVW.Persistence.csproj": {
+              "projectPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Persistence\\SollicitatieSGVW.Persistence.csproj"
             }
           }
         }
