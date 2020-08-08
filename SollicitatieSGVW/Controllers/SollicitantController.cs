@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting.Internal;
 using SollicitatieSGVW.Entity;
 using SollicitatieSGVW.Models;
@@ -159,7 +158,7 @@ namespace SollicitatieSGVW.Controllers
                     await model.CvUrl.CopyToAsync(new FileStream(path, FileMode.Create));
                     sollicitant.CvUrl = "/" + uploadDir + "/" + fileName;
                 }
-                await _sollicitantService.UpdatAsync(sollicitant);
+                await _sollicitantService.UpdateAsync(sollicitant);
                 return RedirectToAction(nameof(Index));
             }
             return View();

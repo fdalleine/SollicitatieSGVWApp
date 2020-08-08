@@ -11,9 +11,8 @@ namespace SollicitatieSGVW.Services
         Task CreateAsync(Sollicitant newSollicitant);
         Sollicitant GetById(int sollicitantId);
         Task UpdateAsync(Sollicitant sollicitant);
-        Task UpdatAsync(int id);
+        Task UpdateAsync(int id);
         Task Delete(int sollicitantId);
         IEnumerable<Sollicitant> GetAll();
-        Task UpdatAsync(Sollicitant sollicitant);
     }
 }

@@ -38,7 +38,7 @@ namespace SollicitatieSGVW.Services.Implementation
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdatAsync(int id)
+        public async Task UpdateAsync(int id)
         {
             var sollicitant = GetById(id);
             _context.Update(sollicitant);
