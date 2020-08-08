@@ -45,6 +45,7 @@ namespace SollicitatieSGVW.Controllers
             var model = new SollicitantCreateViewModel();
             return View(model);
         }
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(SollicitantCreateViewModel model)
@@ -70,7 +71,7 @@ namespace SollicitatieSGVW.Controllers
                     RijksregisterNr = model.RijksregisterNr,
                     Dilpoma = model.Dilpoma,
                     VereisteVakken = model.VereisteVakken,
-                    Motivatie = model.Motivatie,
+                    Motivatie = model.Motivatie
                 };
                 if (model.CvUrl != null && model.CvUrl.Length > 0)
                 {
@@ -87,6 +88,136 @@ namespace SollicitatieSGVW.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View();
+        }
+        
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            var sollicitant = _sollicitantService.GetById(id);
+            if (sollicitant == null)
+            {
+                return NotFound();
+            }
+            var model = new SollicitantEditViewModel()
+            {
+                Id = sollicitant.Id,
+                SollicitantNr = sollicitant.SollicitantNr,
+                VoorNaam = sollicitant.VoorNaam,
+                FamilieNaam = sollicitant.FamilieNaam,
+                Geslacht = sollicitant.Geslacht,
+                GeboorteDatum = sollicitant.GeboorteDatum,
+                InvulDatum = sollicitant.InvulDatum,
+                DatumVrij = sollicitant.DatumVrij,
+                Email = sollicitant.Email,
+                TelefoonNr = sollicitant.TelefoonNr,
+                Adres = sollicitant.Adres,
+                PostCode = sollicitant.PostCode,
+                WoonPlaats = sollicitant.WoonPlaats,
+                RijksregisterNr = sollicitant.RijksregisterNr,
+                Dilpoma = sollicitant.Dilpoma,
+                VereisteVakken = sollicitant.VereisteVakken,
+                Motivatie = sollicitant.Motivatie
+            };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit (SollicitantEditViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var sollicitant = _sollicitantService.GetById(model.Id);
+                if (sollicitant == null)
+                {
+                    return NotFound();
+                }
+                sollicitant.SollicitantNr = model.SollicitantNr;
+                sollicitant.VoorNaam = model.VoorNaam;
+                sollicitant.FamilieNaam = model.FamilieNaam;
+                sollicitant.Geslacht = model.Geslacht;
+                sollicitant.GeboorteDatum = model.GeboorteDatum;
+                sollicitant.InvulDatum = model.InvulDatum;
+                sollicitant.DatumVrij = model.DatumVrij;
+                sollicitant.Email = model.Email;
+                sollicitant.TelefoonNr = model.TelefoonNr;
+                sollicitant.Adres = model.Adres;
+                sollicitant.PostCode = model.PostCode;
+                sollicitant.WoonPlaats = model.WoonPlaats;
+                sollicitant.RijksregisterNr = model.RijksregisterNr;
+                sollicitant.Dilpoma = model.Dilpoma;
+                sollicitant.VereisteVakken = model.VereisteVakken;
+                sollicitant.Motivatie = model.Motivatie;
+                if (model.CvUrl != null && model.CvUrl.Length > 0)
+                {
+                    var uploadDir = @"images/sollicitant";
+                    var fileName = Path.GetFileNameWithoutExtension(model.CvUrl.FileName);
+                    var extension = Path.GetExtension(model.CvUrl.FileName);
+                    var contentRootPath = _hostingEnvironment.ContentRootPath;
+                    fileName = DateTime.UtcNow.ToString("yyyymmssfff") + fileName + extension;
+                    var path = Path.Combine(contentRootPath, uploadDir, fileName);
+                    await model.CvUrl.CopyToAsync(new FileStream(path, FileMode.Create));
+                    sollicitant.CvUrl = "/" + uploadDir + "/" + fileName;
+                }
+                await _sollicitantService.UpdatAsync(sollicitant);
+                return RedirectToAction(nameof(Index));
+            }
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Detail(int id)
+        {
+            var sollicitant = _sollicitantService.GetById(id);
+            if (sollicitant == null)
+            {
+                return NotFound();
+            }
+            SollicitantDetailViewModel model = new SollicitantDetailViewModel()
+            {
+                Id = sollicitant.Id,
+                SollicitantNr = sollicitant.SollicitantNr,
+                VolledigeNaam = sollicitant.VolledigeNaam,
+                Geslacht = sollicitant.Geslacht,
+                GeboorteDatum = sollicitant.GeboorteDatum,
+                InvulDatum = sollicitant.InvulDatum,
+                DatumVrij = sollicitant.DatumVrij,
+                Email = sollicitant.Email,
+                TelefoonNr = sollicitant.TelefoonNr,
+                Adres = sollicitant.Adres,
+                PostCode = sollicitant.PostCode,
+                WoonPlaats = sollicitant.WoonPlaats,
+                RijksregisterNr = sollicitant.RijksregisterNr,
+                Dilpoma = sollicitant.Dilpoma,
+                VereisteVakken = sollicitant.VereisteVakken,
+                Motivatie = sollicitant.Motivatie,
+                CvUrl = sollicitant.CvUrl
+            };
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var sollicitant = _sollicitantService.GetById(id);
+            if (sollicitant == null)
+            {
+                return NotFound();
+            }
+            var model = new SollicitantDeleteViewModel()
+            {
+                Id = sollicitant.Id,
+                VolledigeNaam = sollicitant.VolledigeNaam
+            };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(SollicitantDeleteViewModel model)
+        {
+            await _sollicitantService.Delete(model.Id);
+            return RedirectToAction(nameof(Index));
         }
     }
 }
