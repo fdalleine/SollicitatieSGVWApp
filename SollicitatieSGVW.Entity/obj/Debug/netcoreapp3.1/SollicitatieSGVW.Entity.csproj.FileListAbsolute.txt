@@ -7,3 +7,12 @@ C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVW.Entity\obj\Debu
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVW.Entity\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Entity.csproj.CoreCompileInputs.cache
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVW.Entity\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Entity.dll
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVW.Entity\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Entity.pdb
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Entity\bin\Debug\netcoreapp3.1\SollicitatieSGVW.Entity.deps.json
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Entity\bin\Debug\netcoreapp3.1\SollicitatieSGVW.Entity.dll
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Entity\bin\Debug\netcoreapp3.1\SollicitatieSGVW.Entity.pdb
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Entity\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Entity.csprojAssemblyReference.cache
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Entity\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Entity.AssemblyInfoInputs.cache
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Entity\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Entity.AssemblyInfo.cs
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Entity\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Entity.csproj.CoreCompileInputs.cache
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Entity\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Entity.dll
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Entity\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Entity.pdb

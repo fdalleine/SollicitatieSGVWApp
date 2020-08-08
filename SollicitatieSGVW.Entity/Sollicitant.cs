@@ -19,6 +19,7 @@ namespace SollicitatieSGVW.Entity
         [Required]
         public DateTime GeboorteDatum { get; set; }
         public DateTime InvulDatum { get; set; }
+        public DateTime DatumVrij { get; set; }
         [Required, MaxLength(50)]
         public string Email { get; set; }
         [Required, MaxLength(50)]

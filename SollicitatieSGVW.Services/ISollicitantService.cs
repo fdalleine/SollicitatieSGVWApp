@@ -14,5 +14,6 @@ namespace SollicitatieSGVW.Services
         Task UpdatAsync(int id);
         Task Delete(int sollicitantId);
         IEnumerable<Sollicitant> GetAll();
+        Task UpdatAsync(Sollicitant sollicitant);
     }
 }
