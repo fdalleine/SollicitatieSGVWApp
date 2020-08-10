@@ -11,21 +11,20 @@ namespace SollicitatieSGVW.Models
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage ="Sollicitantnummer is vereist"),
-            RegularExpression(@"^[A-Z] {3,3} [0-9] {3}$")]
+        [RegularExpression(@"^[0-9]{3}$")]
         public string SollicitantNr { get; set; }
 
         [Required(ErrorMessage = "Voornaam is vereist"), StringLength(50, MinimumLength =2)]
-        [RegularExpression(@"^[A-Z] [a-zA-A""'\s-]*$"), Display(Name ="Voornaam")]
+        [RegularExpression(@"^[A-Z][a-zA-A""'\s-]*$"), Display(Name ="Voornaam")]
         public string VoorNaam { get; set; }
 
         [Required(ErrorMessage = "Familienaam is vereist"), StringLength(50, MinimumLength = 2)]
-        [RegularExpression(@"^[A-Z] [a-zA-A""'\s-]*$"), Display(Name = "Familienaam")]
+        [RegularExpression(@"^[A-Z][a-zA-A""'\s-]*$"), Display(Name = "Familienaam")]
         public string FamilieNaam { get; set; }
         public string VolledigeNaam {
             get
             {
-                return VoorNaam + FamilieNaam;
+                return VoorNaam + " " + FamilieNaam;
             } 
         }
         public string Geslacht { get; set; }
@@ -54,7 +53,7 @@ namespace SollicitatieSGVW.Models
         [Required(ErrorMessage = "Woonplaats is vereist"), StringLength(50)]
         public string WoonPlaats { get; set; }
         
-        [Display(Name = "Rijksregisternummer"), RegularExpression(@"^\d{2} . \d{2} . \d{2} - \d{3} . \d{2} $")]
+        [Display(Name = "Rijksregisternummer"), RegularExpression(@"^[0-9]{2}.[0-9]{2}.[0-9]{2}-[0-9]{3}.[0-9]{2}$")]
         public string RijksregisterNr { get; set; }
         
         [Required(ErrorMessage = "Diploma is vereist"), StringLength(50)]

@@ -1,0 +1,172 @@
+﻿@model SollicitantCreateViewModel
+
+
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item"><a asp-action="Index">Lijst Sollicitanten</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Nieuwe sollicitant</li>
+                    </ol>
+                </nav><br /><br />
+                <form method="post" enctype="multipart/form-data" asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label asp-for="SollicitantNr"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="SollicitantNr" class="form-control" placeholder="000"/>
+                            <span asp-validation-for="SollicitantNr" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="form-group col-md-2">
+                            <label asp-for="InvulDatum"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="InvulDatum" class="form-control"/>
+                            <span asp-validation-for="InvulDatum" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label asp-for="VoorNaam"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="VoorNaam" class="form-control" placeholder="Vul je voornaam in"/>
+                            <span asp-validation-for="VoorNaam" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="form-group col-md-2">
+                            <label asp-for="FamilieNaam"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="FamilieNaam" class="form-control" placeholder="Vul je familienaam in"/>
+                            <span asp-validation-for="FamilieNaam" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label asp-for="Geslacht"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="Geslacht" type="radio" value="V" /> V
+                            <input asp-for="Geslacht" type="radio" value="M" /> M
+                            <span asp-validation-for="Geslacht" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="form-group col-md-2">
+                            <label asp-for="GeboorteDatum"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="GeboorteDatum" class="form-control"/>
+                            <span asp-validation-for="GeboorteDatum" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label asp-for="RijksregisterNr"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="RijksregisterNr" class="form-control" placeholder="Vul je rijksregisternummer in"/>
+                            <span asp-validation-for="RijksregisterNr" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="form-group col-md-2">
+                            <label asp-for="Email"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="Email" class="form-control" placeholder="Vul je email in"/>
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label asp-for="TelefoonNr"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="TelefoonNr" class="form-control" placeholder="Vul je telefoonnummer in"/>
+                            <span asp-validation-for="TelefoonNr" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="form-group col-md-2">
+                            <label asp-for="DatumVrij"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="DatumVrij" class="form-control" placeholder="Je bent vrij vanaf..."/>
+                            <span asp-validation-for="DatumVrij" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label asp-for="Adres"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="Adres" class="form-control" placeholder="Vul je adres in" />
+                            <span asp-validation-for="Adres" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-2">
+                            <input asp-for="PostCode" class="form-control" placeholder="Vul je postcode in" />
+                            <span asp-validation-for="PostCode" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label asp-for="WoonPlaats"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="WoonPlaats" class="form-control" placeholder="Vul je woonplaats in" />
+                            <span asp-validation-for="WoonPlaats" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label asp-for="Dilpoma"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="Dilpoma" class="form-control" placeholder="Vul je behaalde diploma in"/>
+                            <span asp-validation-for="Dilpoma" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="form-group col-md-2">
+                            <label asp-for="VereisteVakken"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="VereisteVakken" class="form-control" placeholder="Vul de vakken in die je mag geven"/>
+                            <span asp-validation-for="VereisteVakken" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label asp-for="Motivatie"></label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input asp-for="Motivatie" class="form-control" placeholder="Geef je motivatie op"/>
+                            <span asp-validation-for="Motivatie" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="form-group col-md-1">
+                            <label asp-for="CvUrl"></label>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <div class="btn btn-primary btn-icon-text">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <input asp-for="CvUrl" type="file" value="Upload"/>
+                                <span asp-validation-for="CvUrl" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div><br /><br />
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-rounded btn-primary float-left"><i class="fas fa-plus-square" style="margin-right:0.7em"></i>Save</button>
+                        <a asp-action="index" class="btn btn-rounded btn-success float-right"><i class="fas fa-caret-square-left" style="margin-right:0.7em"></i>Back</a>
+                        <br /><br /><br />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+@section Scripts{ 
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

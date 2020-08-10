@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting.Internal;
 using SollicitatieSGVW.Entity;
 using SollicitatieSGVW.Models;
@@ -14,8 +15,8 @@ namespace SollicitatieSGVW.Controllers
     public class SollicitantController : Controller
     {
         private readonly ISollicitantService _sollicitantService;
-        private readonly HostingEnvironment _hostingEnvironment;
-        public SollicitantController( ISollicitantService sollicitantService, HostingEnvironment hostingEnvironment)
+        private readonly IHostingEnvironment _hostingEnvironment;
+        public SollicitantController( ISollicitantService sollicitantService, IHostingEnvironment hostingEnvironment)
         {
             _sollicitantService = sollicitantService;
             _hostingEnvironment = hostingEnvironment;

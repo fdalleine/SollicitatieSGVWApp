@@ -188,3 +188,7 @@ C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\Sollicitatie
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\obj\Debug\netcoreapp3.1\SollicitatieSGVW.genruntimeconfig.cache
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\obj\Debug\netcoreapp3.1\Razor\Views\Sollicitant\Index.cshtml.g.cs
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\obj\Debug\netcoreapp3.1\Razor\Views\Sollicitant\Create.cshtml.g.cs
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\obj\Debug\netcoreapp3.1\Razor\Views\Sollicitant\Edit.cshtml.g.cs
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\obj\Debug\netcoreapp3.1\Razor\Views\Sollicitant\Detail.cshtml.g.cs
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\obj\Debug\netcoreapp3.1\Razor\Views\Sollicitant\Delete.cshtml.g.cs

@@ -9,12 +9,12 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Employee List</li>
+                        <li class="breadcrumb-item active" aria-current="page">Lijst Sollicitanten</li>
                     </ol>
                 </nav><br /><br />
                 <div class="row">
                     <div class="col-md-12 table-responsive-md">
-                        <a class="btn btn-xs btn-outline-success float-md-right" asp-action="Create"> New Employee</a>
+                        <a class="btn btn-xs btn-outline-success float-md-right" asp-action="Create"> Nieuwe sollicitant</a>
 
                         <table class="table table-striped">
                             <thead>
@@ -41,8 +41,8 @@
                                         </td>
                                         <td>@item.VolledigeNaam</td>
                                         <td>@item.Geslacht</td>
-                                        <td>@item.GeboorteDatum</td>
-                                        <td>@item.DatumVrij</td>
+                                        <td>@item.GeboorteDatum.ToString("dd/MM/yyyy")</td>
+                                        <td>@item.DatumVrij.ToString("dd/MM/yyyy")</td>
                                         <td>@item.Woonplaats</td>
                                         <td>@item.Email</td>
                                         <td>@item.VereisteVakken</td>
