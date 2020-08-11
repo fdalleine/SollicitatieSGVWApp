@@ -22,7 +22,6 @@ C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\Sollicitatie
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Services.csprojAssemblyReference.cache
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Services.AssemblyInfoInputs.cache
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Services.AssemblyInfo.cs
-C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Services.csproj.CoreCompileInputs.cache
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Services.csproj.CopyComplete
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Services.dll
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Services.pdb

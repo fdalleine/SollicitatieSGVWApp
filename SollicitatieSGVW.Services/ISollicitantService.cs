@@ -1,4 +1,5 @@
-﻿using SollicitatieSGVW.Entity;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using SollicitatieSGVW.Entity;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,5 +15,6 @@ namespace SollicitatieSGVW.Services
         Task UpdateAsync(int id);
         Task Delete(int sollicitantId);
         IEnumerable<Sollicitant> GetAll();
+        IEnumerable<SelectListItem> GetAllSollicitantenForTewerkstelling();
     }
 }
