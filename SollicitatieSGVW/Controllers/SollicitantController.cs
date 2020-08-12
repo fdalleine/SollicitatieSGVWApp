@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Hosting.Internal;
 using SollicitatieSGVW.Entity;
 using SollicitatieSGVW.Models;
 using SollicitatieSGVW.Services;
@@ -12,16 +12,18 @@ using System.Threading.Tasks;
 
 namespace SollicitatieSGVW.Controllers
 {
+    
     public class SollicitantController : Controller
     {
         private readonly ISollicitantService _sollicitantService;
-        private readonly IHostingEnvironment _hostingEnvironment;
-        public SollicitantController( ISollicitantService sollicitantService, IHostingEnvironment hostingEnvironment)
+        private readonly IWebHostEnvironment _hostingEnvironment;
+        public SollicitantController( ISollicitantService sollicitantService, IWebHostEnvironment hostingEnvironment)
         {
             _sollicitantService = sollicitantService;
             _hostingEnvironment = hostingEnvironment;
         }
 
+        [Authorize(Roles = "Admin, Directie, Secretariaat")]
         public IActionResult Index(int? pageNumber)
         {
             var sollicitanten = _sollicitantService.GetAll().Select(sollicitant => new SollicitantIndexViewModel
@@ -90,8 +92,9 @@ namespace SollicitatieSGVW.Controllers
             }
             return View();
         }
-        
+
         [HttpGet]
+        [Authorize(Roles = "Admin, Directie")]
         public IActionResult Edit(int id)
         {
             var sollicitant = _sollicitantService.GetById(id);
@@ -124,6 +127,7 @@ namespace SollicitatieSGVW.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin, Directie")]
         public async Task<IActionResult> Edit (SollicitantEditViewModel model)
         {
             if (ModelState.IsValid)
@@ -165,8 +169,9 @@ namespace SollicitatieSGVW.Controllers
             }
             return View();
         }
-
+        
         [HttpGet]
+        [Authorize(Roles = "Admin, Directie, Secretariaat")]
         public IActionResult Detail(int id)
         {
             var sollicitant = _sollicitantService.GetById(id);
@@ -198,6 +203,7 @@ namespace SollicitatieSGVW.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
             var sollicitant = _sollicitantService.GetById(id);
@@ -215,6 +221,7 @@ namespace SollicitatieSGVW.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(SollicitantDeleteViewModel model)
         {
             await _sollicitantService.Delete(model.Id);
