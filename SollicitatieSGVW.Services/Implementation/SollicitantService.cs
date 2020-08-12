@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using SollicitatieSGVW.Entity;
 using SollicitatieSGVW.Persistence;
 using System;
@@ -31,7 +32,7 @@ namespace SollicitatieSGVW.Services.Implementation
             await _context.SaveChangesAsync();
         }
 
-        public IEnumerable<Sollicitant> GetAll() => _context.Sollicitanten;
+        public IEnumerable<Sollicitant> GetAll() => _context.Sollicitanten.AsNoTracking().OrderBy(sol => sol.VolledigeNaam);
 
         public async Task UpdateAsync(Sollicitant sollicitant)
         {

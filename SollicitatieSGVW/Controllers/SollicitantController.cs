@@ -22,7 +22,7 @@ namespace SollicitatieSGVW.Controllers
             _hostingEnvironment = hostingEnvironment;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int? pageNumber)
         {
             var sollicitanten = _sollicitantService.GetAll().Select(sollicitant => new SollicitantIndexViewModel
             {
@@ -36,7 +36,8 @@ namespace SollicitatieSGVW.Controllers
                 Woonplaats = sollicitant.WoonPlaats,
                 VereisteVakken = sollicitant.VereisteVakken
             }).ToList();
-            return View(sollicitanten);
+            int pageSize = 4;
+            return View(SollicitantLijstPagination<SollicitantIndexViewModel>.Create(sollicitanten, pageNumber ?? 1, pageSize));
         }
 
         [HttpGet]
