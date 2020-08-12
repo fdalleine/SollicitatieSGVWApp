@@ -2,13 +2,13 @@
 {
     public enum Schoolkeuze
     {
-        AnnuntiataInstituut,
-        CollegeVeurne,
-        ImmaculataInstituut,
-        SintBernarduscollege,
-        HotelschoolKoksijde,
+        Annuntiata,
+        College,
+        Immaculata,
+        SintBernardus,
+        Hotelschool,
         Rozenkrans,
-        DeNieuwePoort,
-        VTIVeurne
+        NieuwePoort,
+        VTI
     }
 }

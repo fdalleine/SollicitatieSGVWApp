@@ -1,4 +1,5 @@
-﻿using SollicitatieSGVW.Entity;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using SollicitatieSGVW.Entity;
 using SollicitatieSGVW.Persistence;
 using System;
 using System.Collections.Generic;
@@ -43,6 +44,15 @@ namespace SollicitatieSGVW.Services.Implementation
             var sollicitant = GetById(id);
             _context.Update(sollicitant);
             await _context.SaveChangesAsync();
+        }
+
+        public IEnumerable<SelectListItem> GetAllSollicitantenForTewerkstelling()
+        {
+            return GetAll().Select(sol => new SelectListItem()
+            {
+                Text = sol.VolledigeNaam,
+                Value = sol.Id.ToString()
+            });
         }
     }
 }

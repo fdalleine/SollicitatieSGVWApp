@@ -1,0 +1,77 @@
+﻿@model TewerkstellingsRecordCreateViewModel
+
+@{ ViewBag.Title = "Nieuwe tewerkstelling";}
+
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="breadcrumb-item"><a asp-action="Index">Lijst tewerkstellingen</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Nieuwe tewerkstelling</li>
+                </ol>
+            </nav><br /><br />
+                        <form method="post" enctype="multipart/form-data" asp-action="Create">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-row">
+                                <div class="form-group col-md-2">
+                                    <label asp-for="SollicitantId"></label>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <select asp-for="SollicitantId" class="form-control" asp-items="ViewBag.sollicitanten">
+                                        <option selected>--- Selecteer een sollicitant ---</option>
+                                    </select>
+                                    <span asp-validation-for="SollicitantId" class="text-danger"></span>
+                                </div>
+                             </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-2">
+                                        <label asp-for="SchoolId"></label>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <select asp-for="SchoolId" class="form-control" asp-items="ViewBag.scholen">
+                                            <option selected>--- Selecteer een school ---</option>
+                                        </select>
+                                        <span asp-validation-for="SchoolId" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-2">
+                                        <label asp-for="StartDatum"></label>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <input asp-for="StartDatum" class="form-control" />
+                                        <span asp-validation-for="StartDatum" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                    <div class="form-group col-md-2">
+                                        <label asp-for="Einddatum"></label>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <input asp-for="Einddatum" class="form-control" />
+                                        <span asp-validation-for="Einddatum" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Opmerking"></label>
+                                    <input asp-for="Opmerking" class="form-control" placeholder="Noteer hier een eventuele opmerking" />
+                                    <span asp-validation-for="Opmerking" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-rounded btn-primary float-left"><i class="fas fa-plus-square" style="margin-right:0.7em"></i>Save</button>
+                                    <a asp-action="index" class="btn btn-rounded btn-success float-right"><i class="fas fa-caret-square-left" style="margin-right:0.7em"></i>Back</a>
+                                    <br /><br /><br />
+                                </div>
+                        </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -37,6 +37,7 @@ namespace SollicitatieSGVW
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddScoped<ISollicitantService, SollicitantService>();
+            services.AddScoped<ITewerkstellingService, TewerkstellingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

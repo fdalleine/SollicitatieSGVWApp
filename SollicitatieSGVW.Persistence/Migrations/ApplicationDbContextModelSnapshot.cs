@@ -219,6 +219,21 @@ namespace SollicitatieSGVW.Persistence.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("SollicitatieSGVW.Entity.Scholen", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("SchoolNaam")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Scholen");
+                });
+
             modelBuilder.Entity("SollicitatieSGVW.Entity.Sollicitant", b =>
                 {
                     b.Property<int>("Id")
@@ -314,7 +329,11 @@ namespace SollicitatieSGVW.Persistence.Migrations
                     b.Property<DateTime>("Einddatum")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("School")
+                    b.Property<string>("Opmerking")
+                        .HasColumnType("nvarchar(500)")
+                        .HasMaxLength(500);
+
+                    b.Property<int>("SchoolId")
                         .HasColumnType("int");
 
                     b.Property<int>("SollicitantId")
@@ -327,6 +346,8 @@ namespace SollicitatieSGVW.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("SchoolId");
 
                     b.HasIndex("SollicitantId");
 
@@ -386,6 +407,12 @@ namespace SollicitatieSGVW.Persistence.Migrations
 
             modelBuilder.Entity("SollicitatieSGVW.Entity.TewerkstellingsRecord", b =>
                 {
+                    b.HasOne("SollicitatieSGVW.Entity.Scholen", "School")
+                        .WithMany()
+                        .HasForeignKey("SchoolId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("SollicitatieSGVW.Entity.Sollicitant", "Sollicitant")
                         .WithMany("TewerkstellingsRecords")
                         .HasForeignKey("SollicitantId")

@@ -25,3 +25,4 @@ C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\Sollicitatie
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Services.csproj.CopyComplete
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Services.dll
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Services.pdb
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Debug\netcoreapp3.1\SollicitatieSGVW.Services.csproj.CoreCompileInputs.cache

@@ -15,5 +15,6 @@ namespace SollicitatieSGVW.Persistence
         }
         public DbSet<TewerkstellingsRecord> TewerkstellingsRecords { get; set; }
         public DbSet<Sollicitant> Sollicitanten { get; set; }
+        public DbSet<Scholen> Scholen { get; set; }
     }
 }
