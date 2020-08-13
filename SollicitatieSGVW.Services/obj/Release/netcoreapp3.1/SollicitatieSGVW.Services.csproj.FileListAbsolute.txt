@@ -1,0 +1,14 @@
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\bin\Release\netcoreapp3.1\SollicitatieSGVW.Services.deps.json
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\bin\Release\netcoreapp3.1\SollicitatieSGVW.Services.dll
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\bin\Release\netcoreapp3.1\SollicitatieSGVW.Services.pdb
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\bin\Release\netcoreapp3.1\SollicitatieSGVW.Entity.dll
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\bin\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.dll
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\bin\Release\netcoreapp3.1\SollicitatieSGVW.Entity.pdb
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\bin\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.pdb
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Release\netcoreapp3.1\SollicitatieSGVW.Services.csprojAssemblyReference.cache
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Release\netcoreapp3.1\SollicitatieSGVW.Services.AssemblyInfoInputs.cache
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Release\netcoreapp3.1\SollicitatieSGVW.Services.AssemblyInfo.cs
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Release\netcoreapp3.1\SollicitatieSGVW.Services.csproj.CoreCompileInputs.cache
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Release\netcoreapp3.1\SollicitatieSGVW.Services.csproj.CopyComplete
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Release\netcoreapp3.1\SollicitatieSGVW.Services.dll
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Services\obj\Release\netcoreapp3.1\SollicitatieSGVW.Services.pdb

@@ -1,0 +1,15 @@
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\bin\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.deps.json
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\bin\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.runtimeconfig.json
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\bin\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.runtimeconfig.dev.json
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\bin\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.dll
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\bin\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.pdb
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\bin\Release\netcoreapp3.1\SollicitatieSGVW.Entity.dll
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\bin\Release\netcoreapp3.1\SollicitatieSGVW.Entity.pdb
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\obj\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.csprojAssemblyReference.cache
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\obj\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.AssemblyInfoInputs.cache
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\obj\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.AssemblyInfo.cs
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\obj\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\obj\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.csproj.CopyComplete
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\obj\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.dll
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\obj\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.pdb
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW.Persistence\obj\Release\netcoreapp3.1\SollicitatieSGVW.Persistence.genruntimeconfig.cache

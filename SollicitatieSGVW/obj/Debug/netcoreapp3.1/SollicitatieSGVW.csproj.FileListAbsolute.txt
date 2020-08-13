@@ -315,3 +315,4 @@ C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\Sollicitatie
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\SollicitatieSGVW20200812180553 - Web Deploy\profile.arm.json

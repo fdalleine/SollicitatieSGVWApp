@@ -21,7 +21,7 @@ namespace SollicitatieSGVW.Controllers
             _sollicitantService = sollicitantService;
         }
 
-        [Authorize(Roles = "Admin, Directie, Secretariaat")]
+        //[Authorize(Roles = "Admin, Directie, Secretariaat")]
         public IActionResult Index()
         {
             var tewerkstellingsRecord = _tewerkstellingService.GetAll().Select(tewerkstelling => new TewerkstellingsRecordIndexViewModel 
@@ -38,7 +38,7 @@ namespace SollicitatieSGVW.Controllers
             return View(tewerkstellingsRecord);
         }
 
-        [Authorize(Roles = "Admin, Directie")]
+        //[Authorize(Roles = "Admin, Directie")]
         public IActionResult Create()
         {
             ViewBag.sollicitanten = _sollicitantService.GetAllSollicitantenForTewerkstelling();
@@ -49,7 +49,7 @@ namespace SollicitatieSGVW.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin, Directie")]
+        //[Authorize(Roles = "Admin, Directie")]
         public async Task<IActionResult> Create( TewerkstellingsRecordCreateViewModel model)
         {
             if (ModelState.IsValid)
@@ -73,7 +73,7 @@ namespace SollicitatieSGVW.Controllers
             return View();
         }
 
-        [Authorize(Roles = "Admin, Directie")]
+        //[Authorize(Roles = "Admin, Directie")]
         public IActionResult Detail(int id)
         {
             var tewerkstellingsrecord = _tewerkstellingService.GetById(id);
@@ -96,7 +96,6 @@ namespace SollicitatieSGVW.Controllers
             return View(model);
         }
 
-        [Authorize(Roles = "Admin, Directie")]
         [AllowAnonymous]
         public IActionResult DetailPdf(int id)
         {
@@ -121,7 +120,7 @@ namespace SollicitatieSGVW.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Admin, Directie")]
+        //[Authorize(Roles = "Admin, Directie")]
         public IActionResult Edit(int id)
         {
             ViewBag.sollicitanten = _sollicitantService.GetAllSollicitantenForTewerkstelling();
@@ -147,7 +146,7 @@ namespace SollicitatieSGVW.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin, Directie")]
+        //[Authorize(Roles = "Admin, Directie")]
         public async Task<IActionResult> Edit(TewerkstellingsRecordEditViewModel model)
         {
             if (ModelState.IsValid)
