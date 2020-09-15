@@ -24,17 +24,18 @@ namespace SollicitatieSGVW.Controllers
         [Authorize(Roles = "Admin, Directie, Secretariaat")]
         public IActionResult Index()
         {
-            var tewerkstellingsRecord = _tewerkstellingService.GetAll().Select(tewerkstelling => new TewerkstellingsRecordIndexViewModel 
+            var tewerkstellingsRecord = _tewerkstellingService.GetAll().Select(tewerkstelling => new TewerkstellingsRecordIndexViewModel
             {
                 Id = tewerkstelling.Id,
                 SollicitantId = tewerkstelling.SollicitantId,
                 Sollicitant = tewerkstelling.Sollicitant,
                 VolledigeNaam = tewerkstelling.VolledigeNaam,
+                SchoolNaam = tewerkstelling.SchoolNaam,
                 SchoolId = tewerkstelling.SchoolId,
                 School = tewerkstelling.School,
                 StartDatum = tewerkstelling.StartDatum,
                 Einddatum = tewerkstelling.Einddatum
-            });
+            }) ;
             return View(tewerkstellingsRecord);
         }
 

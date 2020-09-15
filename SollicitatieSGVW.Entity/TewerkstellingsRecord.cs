@@ -13,6 +13,7 @@ namespace SollicitatieSGVW.Entity
         public int SollicitantId { get; set; }
         public Sollicitant Sollicitant { get; set; }
         public string VolledigeNaam { get; set; }
+        public string SchoolNaam { get; set; }
         public int SchoolId { get; set; }
         public Scholen School { get; set; }
         public DateTime StartDatum { get; set; }

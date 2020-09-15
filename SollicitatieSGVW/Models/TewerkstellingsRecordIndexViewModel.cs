@@ -17,6 +17,8 @@ namespace SollicitatieSGVW.Models
         
         [Display(Name="Naam")]
         public string VolledigeNaam { get; set; }
+
+        public string SchoolNaam { get; set; }
        
         public int SchoolId { get; set; }
 
