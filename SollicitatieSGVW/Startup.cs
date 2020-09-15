@@ -35,7 +35,8 @@ namespace SollicitatieSGVW
             
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
+                .AddDefaultTokenProviders()
+                .AddDefaultUI();
 
             services.Configure<IdentityOptions>(options =>
             {

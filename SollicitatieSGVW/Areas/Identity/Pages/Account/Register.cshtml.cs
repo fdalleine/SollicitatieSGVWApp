@@ -51,14 +51,14 @@ namespace SollicitatieSGVW.Areas.Identity.Pages.Account
             public string Email { get; set; }
 
             [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [StringLength(20, ErrorMessage = "Het {0} moet minstens {2} en maximum {1} karakters lang zijn.", MinimumLength = 6)]
             [DataType(DataType.Password)]
-            [Display(Name = "Password")]
+            [Display(Name = "Wachtwoord")]
             public string Password { get; set; }
 
             [DataType(DataType.Password)]
-            [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Display(Name = "Bevestig wachtwoord")]
+            [Compare("Password", ErrorMessage = "De wachtwoorden komen niet overeen.")]
             public string ConfirmPassword { get; set; }
         }
 

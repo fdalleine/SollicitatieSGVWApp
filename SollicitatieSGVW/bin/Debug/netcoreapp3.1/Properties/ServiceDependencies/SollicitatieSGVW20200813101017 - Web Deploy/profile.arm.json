@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "SollicitatieSGVW20200812180553",
+      "defaultValue": "SollicitatieSGVW20200813101017",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }

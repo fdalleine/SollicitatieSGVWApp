@@ -23,7 +23,7 @@ namespace SollicitatieSGVW.Controllers
             _hostingEnvironment = hostingEnvironment;
         }
 
-        //[Authorize(Roles = "Admin, Directie, Secretariaat")]
+        [Authorize(Roles = "Admin, Directie, Secretariaat")]
         public IActionResult Index(int? pageNumber)
         {
             var sollicitanten = _sollicitantService.GetAll().Select(sollicitant => new SollicitantIndexViewModel
@@ -76,9 +76,10 @@ namespace SollicitatieSGVW.Controllers
                     VereisteVakken = model.VereisteVakken,
                     Motivatie = model.Motivatie
                 };
+
                 if (model.CvUrl != null && model.CvUrl.Length > 0)
                 {
-                    var uploadDir = @"images/sollicitant";
+                    var uploadDir = @"/images/sollicitant";
                     var fileName = Path.GetFileNameWithoutExtension(model.CvUrl.FileName);
                     var extension = Path.GetExtension(model.CvUrl.FileName);
                     var contentRootPath = _hostingEnvironment.ContentRootPath;
@@ -94,7 +95,7 @@ namespace SollicitatieSGVW.Controllers
         }
 
         [HttpGet]
-        //[Authorize(Roles = "Admin, Directie")]
+        [Authorize(Roles = "Admin, Directie")]
         public IActionResult Edit(int id)
         {
             var sollicitant = _sollicitantService.GetById(id);
@@ -127,7 +128,7 @@ namespace SollicitatieSGVW.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        //[Authorize(Roles = "Admin, Directie")]
+        [Authorize(Roles = "Admin, Directie")]
         public async Task<IActionResult> Edit (SollicitantEditViewModel model)
         {
             if (ModelState.IsValid)
@@ -171,7 +172,7 @@ namespace SollicitatieSGVW.Controllers
         }
         
         [HttpGet]
-        //[Authorize(Roles = "Admin, Directie, Secretariaat")]
+        [Authorize(Roles = "Admin, Directie, Secretariaat")]
         public IActionResult Detail(int id)
         {
             var sollicitant = _sollicitantService.GetById(id);
@@ -203,7 +204,7 @@ namespace SollicitatieSGVW.Controllers
         }
 
         [HttpGet]
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
             var sollicitant = _sollicitantService.GetById(id);
@@ -221,7 +222,7 @@ namespace SollicitatieSGVW.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(SollicitantDeleteViewModel model)
         {
             await _sollicitantService.Delete(model.Id);

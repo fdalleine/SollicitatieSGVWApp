@@ -21,7 +21,7 @@ namespace SollicitatieSGVW.Persistence
                 }
             }
 
-            //Create Admin User
+            //Admin user
             if (userManager.FindByEmailAsync("frederick.dalleine@sgvw.be").Result == null)
             {
                 IdentityUser user = new IdentityUser
@@ -36,7 +36,7 @@ namespace SollicitatieSGVW.Persistence
                 }
             }
 
-            //Create Manager User
+            //Directie user
             if (userManager.FindByEmailAsync("dir@sgvw.be").Result == null)
             {
                 IdentityUser user = new IdentityUser
@@ -51,7 +51,7 @@ namespace SollicitatieSGVW.Persistence
                 }
             }
 
-            //Create Staff User
+            //Secretariaat user
             if (userManager.FindByEmailAsync("secr@sgvw.be").Result == null)
             {
                 IdentityUser user = new IdentityUser
@@ -66,7 +66,7 @@ namespace SollicitatieSGVW.Persistence
                 }
             }
 
-            //Create No Role User
+            //No Role User
             if (userManager.FindByEmailAsync("user@sgvw.be").Result == null)
             {
                 IdentityUser user = new IdentityUser
@@ -75,7 +75,7 @@ namespace SollicitatieSGVW.Persistence
                     Email = "user@sgvw.be"
                 };
                 IdentityResult identityResult = userManager.CreateAsync(user, "Password1").Result;
-                //No Role assigned to Mr John Doe
+                
             }
         }
     }

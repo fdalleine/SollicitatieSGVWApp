@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wxrGk3MuHT3JwNiZLcdPlZrxCR/GG/DAd5N8ml6oiAyJClkGMHZpJOOpQ9vQbKPpqAnwg9Vfo/dYOckrLxX5CQ==",
+  "dgSpecHash": "4YTnddfjdWQJGzFb7VCP4Dffpw5HSHIiLRNm/Piqslrh4rvGPe5BCfJnf2v2xh+1ws9uhZze6OtOL7dGqnzgKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW\\SollicitatieSGVW.csproj",
+  "projectFilePath": "C:\\Users\\fdall\\Dropbox\\Opleiding programmeur\\2de jaar\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW\\SollicitatieSGVW.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fdall\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\fdall\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.0.0\\microsoft.aspnetcore.authentication.2.0.0.nupkg.sha512",

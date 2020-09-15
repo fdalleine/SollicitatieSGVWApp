@@ -10110,11 +10110,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW\\SollicitatieSGVW.csproj",
+      "projectUniqueName": "C:\\Users\\fdall\\Dropbox\\Opleiding programmeur\\2de jaar\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW\\SollicitatieSGVW.csproj",
       "projectName": "SollicitatieSGVW",
-      "projectPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW\\SollicitatieSGVW.csproj",
+      "projectPath": "C:\\Users\\fdall\\Dropbox\\Opleiding programmeur\\2de jaar\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW\\SollicitatieSGVW.csproj",
       "packagesPath": "C:\\Users\\fdall\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW\\obj\\",
+      "outputPath": "C:\\Users\\fdall\\Dropbox\\Opleiding programmeur\\2de jaar\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -10133,11 +10133,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj": {
-              "projectPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj"
+            "C:\\Users\\fdall\\Dropbox\\Opleiding programmeur\\2de jaar\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj": {
+              "projectPath": "C:\\Users\\fdall\\Dropbox\\Opleiding programmeur\\2de jaar\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj"
             },
-            "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Services\\SollicitatieSGVW.Services.csproj": {
-              "projectPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Services\\SollicitatieSGVW.Services.csproj"
+            "C:\\Users\\fdall\\Dropbox\\Opleiding programmeur\\2de jaar\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Services\\SollicitatieSGVW.Services.csproj": {
+              "projectPath": "C:\\Users\\fdall\\Dropbox\\Opleiding programmeur\\2de jaar\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Services\\SollicitatieSGVW.Services.csproj"
             }
           }
         }

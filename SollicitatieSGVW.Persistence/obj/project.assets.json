@@ -5123,11 +5123,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Persistence\\SollicitatieSGVW.Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\fdall\\Dropbox\\Opleiding programmeur\\2de jaar\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Persistence\\SollicitatieSGVW.Persistence.csproj",
       "projectName": "SollicitatieSGVW.Persistence",
-      "projectPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Persistence\\SollicitatieSGVW.Persistence.csproj",
+      "projectPath": "C:\\Users\\fdall\\Dropbox\\Opleiding programmeur\\2de jaar\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Persistence\\SollicitatieSGVW.Persistence.csproj",
       "packagesPath": "C:\\Users\\fdall\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Persistence\\obj\\",
+      "outputPath": "C:\\Users\\fdall\\Dropbox\\Opleiding programmeur\\2de jaar\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5146,8 +5146,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj": {
-              "projectPath": "C:\\Users\\fdall\\Desktop\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj"
+            "C:\\Users\\fdall\\Dropbox\\Opleiding programmeur\\2de jaar\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj": {
+              "projectPath": "C:\\Users\\fdall\\Dropbox\\Opleiding programmeur\\2de jaar\\Eindproject C# developer\\SollicitatieSGVWApp\\SollicitatieSGVW.Entity\\SollicitatieSGVW.Entity.csproj"
             }
           }
         }

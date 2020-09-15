@@ -3,7 +3,6 @@ C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\Sollicitatie
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\bin\Release\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\bin\Release\netcoreapp3.1\Properties\serviceDependencies.json
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\bin\Release\netcoreapp3.1\Properties\serviceDependencies.local.json
-C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\bin\Release\netcoreapp3.1\Properties\ServiceDependencies\SollicitatieSGVW20200812180553 - Web Deploy\profile.arm.json
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\bin\Release\netcoreapp3.1\SollicitatieSGVW.StaticWebAssets.xml
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\bin\Release\netcoreapp3.1\WkHtmlToPdf\wkhtmltoimage.exe
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\bin\Release\netcoreapp3.1\WkHtmlToPdf\wkhtmltopdf.exe
@@ -222,3 +221,4 @@ C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\Sollicitatie
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\obj\Release\netcoreapp3.1\SollicitatieSGVW.dll
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\obj\Release\netcoreapp3.1\SollicitatieSGVW.pdb
 C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\obj\Release\netcoreapp3.1\SollicitatieSGVW.genruntimeconfig.cache
+C:\Users\fdall\Desktop\Eindproject C# developer\SollicitatieSGVWApp\SollicitatieSGVW\bin\Release\netcoreapp3.1\Properties\ServiceDependencies\SollicitatieSGVW20200813101017 - Web Deploy\profile.arm.json
