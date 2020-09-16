@@ -10,8 +10,8 @@ using SollicitatieSGVW.Persistence;
 namespace SollicitatieSGVW.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200915201129_Schoolnaam")]
-    partial class Schoolnaam
+    [Migration("20200916112224_ForeignKeyScholen")]
+    partial class ForeignKeyScholen
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

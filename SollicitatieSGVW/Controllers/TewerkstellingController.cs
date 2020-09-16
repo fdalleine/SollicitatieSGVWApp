@@ -15,10 +15,12 @@ namespace SollicitatieSGVW.Controllers
     {
         private readonly ITewerkstellingService _tewerkstellingService;
         private readonly ISollicitantService _sollicitantService;
-        public TewerkstellingController(ITewerkstellingService tewerkstellingService, ISollicitantService sollicitantService)
+        private readonly IScholenService _scholenService;
+        public TewerkstellingController(ITewerkstellingService tewerkstellingService, ISollicitantService sollicitantService, IScholenService scholenService)
         {
             _tewerkstellingService = tewerkstellingService;
             _sollicitantService = sollicitantService;
+            _scholenService = scholenService;
         }
 
         [Authorize(Roles = "Admin, Directie, Secretariaat")]
@@ -61,6 +63,7 @@ namespace SollicitatieSGVW.Controllers
                     SollicitantId = model.SollicitantId,
                     VolledigeNaam = _sollicitantService.GetById(model.SollicitantId).VolledigeNaam,
                     SchoolId = model.SchoolId,
+                    SchoolNaam = _scholenService.GetById(model.SchoolId).SchoolNaam,
                     School = model.School,
                     StartDatum = model.StartDatum,
                     Einddatum = model.Einddatum,
@@ -89,6 +92,7 @@ namespace SollicitatieSGVW.Controllers
                 SollicitantId = tewerkstellingsrecord.SollicitantId,
                 VolledigeNaam = tewerkstellingsrecord.VolledigeNaam,
                 SchoolId = tewerkstellingsrecord.SchoolId,
+                SchoolNaam = tewerkstellingsrecord.SchoolNaam,
                 School = tewerkstellingsrecord.School,
                 StartDatum = tewerkstellingsrecord.StartDatum,
                 Einddatum = tewerkstellingsrecord.Einddatum,
@@ -112,6 +116,7 @@ namespace SollicitatieSGVW.Controllers
                 SollicitantId = tewerkstellingsrecord.SollicitantId,
                 VolledigeNaam = tewerkstellingsrecord.VolledigeNaam,
                 SchoolId = tewerkstellingsrecord.SchoolId,
+                SchoolNaam = tewerkstellingsrecord.SchoolNaam,
                 School = tewerkstellingsrecord.School,
                 StartDatum = tewerkstellingsrecord.StartDatum,
                 Einddatum = tewerkstellingsrecord.Einddatum,
@@ -137,6 +142,7 @@ namespace SollicitatieSGVW.Controllers
                 SollicitantId = tewerkstellingsrecord.SollicitantId,
                 VolledigeNaam = tewerkstellingsrecord.VolledigeNaam,
                 SchoolId = tewerkstellingsrecord.SchoolId,
+                SchoolNaam = tewerkstellingsrecord.SchoolNaam,
                 School = tewerkstellingsrecord.School,
                 StartDatum = tewerkstellingsrecord.StartDatum,
                 Einddatum = tewerkstellingsrecord.Einddatum,
@@ -160,6 +166,7 @@ namespace SollicitatieSGVW.Controllers
                 tewerkstelling.SollicitantId = model.SollicitantId;
                 tewerkstelling.VolledigeNaam = model.VolledigeNaam;
                 tewerkstelling.SchoolId = model.SchoolId;
+                tewerkstelling.SchoolNaam = model.SchoolNaam;
                 tewerkstelling.School = model.School;
                 tewerkstelling.StartDatum = model.StartDatum;
                 tewerkstelling.Einddatum = model.Einddatum;

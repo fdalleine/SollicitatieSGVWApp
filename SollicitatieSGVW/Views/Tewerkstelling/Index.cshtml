@@ -29,24 +29,24 @@
                             <tbody>
                                 @foreach (var item in Model)
                                 {
-                                    <tr>
-                                        <td>
-                                            <a asp-action="Detail" asp-route-id="@item.Id">
-                                                @item.VolledigeNaam
-                                            </a>
-                                        </td>
-                                        <td>@item.SchoolNaam</td>
-                                        <td>@item.StartDatum.ToString("dd/MM/yyyy")</td>
-                                        <td>@item.Einddatum.ToString("dd/MM/yyyy")</td>
-                                        <td>
-                                            <a class="text-success" asp-action="Edit" asp-route-id="@item.Id">
-                                                <i class="fas fa-edit"></i>Bewerk
-                                            </a>
-                                            <a class="text-warning" asp-action="GeneratePdf" asp-route-id="@item.Id">
-                                                <i class="fas fa-file-pdf"></i>Pdf
-                                            </a>
-                                        </td>
-                                    </tr>
+                                <tr>
+                                    <td>
+                                        <a asp-action="Detail" asp-route-id="@item.Id">
+                                            @item.VolledigeNaam
+                                        </a>
+                                    </td>
+                                    <td>@item.SchoolNaam</td>
+                                    <td>@item.StartDatum.ToString("dd/MM/yyyy")</td>
+                                    <td>@item.Einddatum.ToString("dd/MM/yyyy")</td>
+                                    <td>
+                                        <a class="text-success" asp-action="Edit" asp-route-id="@item.Id">
+                                            <i class="fas fa-edit"></i>Bewerk
+                                        </a>
+                                        <a class="text-warning" asp-action="GeneratePdf" asp-route-id="@item.Id">
+                                            <i class="fas fa-file-pdf"></i>Pdf
+                                        </a>
+                                    </td>
+                                </tr>
                                 }
                             </tbody>
                         </table>

@@ -2,7 +2,7 @@
 
 namespace SollicitatieSGVW.Persistence.Migrations
 {
-    public partial class Schoolnaam : Migration
+    public partial class AddSchoolnaam : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
