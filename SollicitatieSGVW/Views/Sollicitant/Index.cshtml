@@ -19,7 +19,6 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>SollicitantNr.</th>
                                     <th>Naam</th>
                                     <th>Geslacht</th>
                                     <th>Geboortedatum</th>
@@ -36,10 +35,9 @@
                                     <tr>
                                         <td>
                                             <a asp-action="Detail" asp-route-id="@item.Id">
-                                                @item.SollicitantNr
+                                                @item.VolledigeNaam
                                             </a>
                                         </td>
-                                        <td>@item.VolledigeNaam</td>
                                         <td>@item.Geslacht</td>
                                         <td>@item.GeboorteDatum.ToString("dd/MM/yyyy")</td>
                                         <td>@item.DatumVrij.ToString("dd/MM/yyyy")</td>
