@@ -12,7 +12,7 @@ namespace SollicitatieSGVW.Models
         public int Id { get; set; }
 
         [RegularExpression(@"^[0-9]{3}$")]
-        public string SollicitantNr { get; set; }
+        public string SollicitantNr { get; set; } = "001";
 
         [Required(ErrorMessage = "Voornaam is vereist"), StringLength(50, MinimumLength =2)]
         [RegularExpression(@"^[A-Z][a-zA-A""'\s-]*$"), Display(Name ="Voornaam")]
